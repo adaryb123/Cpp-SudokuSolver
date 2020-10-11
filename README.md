@@ -1,7 +1,9 @@
 # Cpp-SudokuSolver
 A program for solving sudoku stored in .sdm or .sdx format
 Input and output file are passed as arguments in main function (example : "-i input.sdm -o output.txt". If one (or both) are not provided, program will read (or write) to console instead.
+
 Alternatively, if a .sdx file is passed as input, with parameter "--check" ("--check input.sdx), programm will output 'YES" or 'NO', depends on if the sudoku can be solved by the given candidate numbers in .sdx file.
+
 .sdm file example (each line represents 1 sudoku with zeroes as empty cells): 
 
 016400000200009000400000062070230100100000003003087040960000005000800007000006820
@@ -10,6 +12,7 @@ Alternatively, if a .sdx file is passed as input, with parameter "--check" ("--c
 316452978285679314497318562879234156142965783653187249968721495521843697734596821
 000605000003020800045090270500000001062000540400000007098060450006040700000203000
 409000705000010000006207800200000009003704200800000004002801500000060000905000406
+
 
 .sdx file example (1 sudoku, 9x9 cells are separated by whitespaces, candidate numbers for each cells are provided, and if cell starts with 'u', that means its number is already set):
 
